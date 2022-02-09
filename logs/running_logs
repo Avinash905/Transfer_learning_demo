@@ -1,0 +1,55 @@
+[2022-02-09 19:22:35,079: INFO: 03_less_than_5_transfer_learning]: 
+********************
+[2022-02-09 19:22:35,080: INFO: 03_less_than_5_transfer_learning]: >>>>> stage less than 5 transfer learning started <<<<<
+[2022-02-09 19:22:35,086: INFO: common]: yaml file : configs/config.yaml loaded successfully
+[2022-02-09 19:22:39,471: INFO: 03_less_than_5_transfer_learning]: loaded base model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inputlayer (Flatten)        (None, 784)               0         
+                                                                 
+ hiddenlayer1 (Dense)        (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ hiddenlayer2 (Dense)        (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ outputlayer (Dense)         (None, 10)                1010      
+                                                                 
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+_________________________________________________________________
+
+[2022-02-09 19:22:46,218: INFO: 03_less_than_5_transfer_learning]: evaluation metrics [0.3980655074119568, 0.8921999931335449]
+[2022-02-09 19:22:46,332: INFO: 03_less_than_5_transfer_learning]: less than 5 transfer learning model summary: 
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inputlayer (Flatten)        (None, 784)               0         
+                                                                 
+ hiddenlayer1 (Dense)        (None, 300)               235500    
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 300)               0         
+                                                                 
+ hiddenlayer2 (Dense)        (None, 100)               30100     
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 100)               0         
+                                                                 
+ output_layer (Dense)        (None, 2)                 202       
+                                                                 
+=================================================================
+Total params: 265,802
+Trainable params: 265,802
+Non-trainable params: 0
+_________________________________________________________________
+
+[2022-02-09 19:23:28,363: INFO: 03_less_than_5_transfer_learning]: less than 5 model is saved at artifacts\models\less_than_5_model.h5
+[2022-02-09 19:23:29,506: INFO: 03_less_than_5_transfer_learning]: evaluation metrics [0.22570732235908508, 0.9222000241279602]
+[2022-02-09 19:23:29,588: INFO: 03_less_than_5_transfer_learning]: >>>>> stage less than 5 transfer learning completed!<<<<<
+
